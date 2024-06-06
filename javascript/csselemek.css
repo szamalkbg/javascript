@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Cheatsheet</title>
+    <style>
+        /* Mértékegységek */
+        /* px: pixel, em: az aktuális elem betűmérete, rem: a gyökérelem (root) betűmérete, %: százalékos arány, vw: viewport szélességének százaléka, vh: viewport magasságának százaléka, fr: a rács (grid) elosztási egysége */
+
+        /* Alap CSS beállítások */
+        
+        /* Szövegformázás */
+        .bold {
+            font-weight: bold;
+        }
+        .italic {
+            font-style: italic;
+        }
+        .underline {
+            text-decoration: underline;
+        }
+        .highlight {
+            background-color: yellow;
+        }
+        .small-text {
+            font-size: 0.8em;
+        }
+        .strikethrough {
+            text-decoration: line-through;
+        }
+        
+        /* Színek */
+        .text-red {
+            color: red;
+        }
+        .bg-blue {
+            background-color: blue;
+        }
+        .text-white {
+            color: white;
+        }
+        
+        /* Elhelyezés és igazítás */
+        .center-text {
+            text-align: center;
+        }
+        .right-text {
+            text-align: right;
+        }
+        .left-text {
+            text-align: left;
+        }
+        
+        /* Box Model */
+        .box {
+            width: 100px;
+            height: 100px;
+            padding: 10px;
+            margin: 20px;
+            border: 1px solid black;
+        }
+        .box-content {
+            padding: 10px;
+        }
+        
+        /* Flexbox */
+        .flex-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+        }
+        .flex-item {
+            flex: 1;
+        }
+        .flex-item-2 {
+            flex: 2;
+        }
+        
+        /* Grid */
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 10px;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            .responsive {
+                background-color: lightgrey;
+            }
+        }
+        
+        /* Láthatóság */
+        .hidden {
+            display: none;
+        }
+        .visible {
+            display: block;
+        }
+        
+        /* Szegélyek és árnyékok */
+        .rounded {
+            border-radius: 10px;
+        }
+        .shadow {
+            box-shadow: 5px 5px 5px #888888;
+        }
+        
+        /* Betűtípusok */
+        .custom-font {
+            font-family: 'Arial', sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Fejléc -->
+    <header>
+        <h1>CSS Cheatsheet</h1>
+    </header>
+
+    <!-- Fő tartalom -->
+    <main>
+
+        <!-- Mértékegységek -->
+        <section>
+            <h2>Mértékegységek</h2>
+            <ul>
+                <li><strong>px:</strong> pixel</li>
+                <li><strong>em:</strong> az aktuális elem betűmérete</li>
+                <li><strong>rem:</strong> a gyökérelem (root) betűmérete</li>
+                <li><strong>%:</strong> százalékos arány</li>
+                <li><strong>vw:</strong> viewport szélességének százaléka</li>
+                <li><strong>vh:</strong> viewport magasságának százaléka</li>
+                <li><strong>fr:</strong> a rács (grid) elosztási egysége</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <!-- Szövegformázás -->
+        <section>
+            <h2>Szövegformázás</h2>
+            <p class="bold">Félkövér szöveg</p>
+            <p class="italic">Dőlt szöveg</p>
+            <p class="underline">Aláhúzott szöveg</p>
+            <p class="highlight">Kiemelt szöveg</p>
+            <p class="small-text">Kisebb szöveg</p>
+            <p class="strikethrough">Áthúzott szöveg</p>
+        </section>
+
+        <hr>
+
+        <!-- Színek -->
+        <section>
+            <h2>Színek</h2>
+            <p class="text-red">Piros szöveg</p>
+            <p class="bg-blue text-white">Kék háttér fehér szöveggel</p>
+        </section>
+
+        <hr>
+
+        <!-- Elhelyezés és igazítás -->
+        <section>
+            <h2>Elhelyezés és igazítás</h2>
+            <p class="center-text">Középre igazított szöveg</p>
+            <p class="right-text">Jobbra igazított szöveg</p>
+            <p class="left-text">Balra igazított szöveg</p>
+        </section>
+
+        <hr>
+
+        <!-- Box Model -->
+        <section>
+            <h2>Box Model</h2>
+            <div class="box">
+                <div class="box-content">Ez egy doboz tartalma</div>
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- Flexbox -->
+        <section>
+            <h2>Flexbox</h2>
+            <div class="flex-container">
+                <div class="flex-item">Elem 1</div>
+                <div class="flex-item">Elem 2</div>
+                <div class="flex-item-2">Elem 3 (2x szélesebb)</div>
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- Grid -->
+        <section>
+            <h2>Grid</h2>
+            <div class="grid-container">
+                <div>Elem 1</div>
+                <div>Elem 2</div>
+                <div>Elem 3</div>
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- Responsive Design -->
+        <section>
+            <h2>Responsive Design</h2>
+            <div class="responsive">Ez az elem változik, ha a képernyő szélessége 600px alá csökken</div>
+        </section>
+
+        <hr>
+
+        <!-- Láthatóság -->
+        <section>
+            <h2>Láthatóság</h2>
+            <p class="hidden">Ez a szöveg el van rejtve</p>
+            <p class="visible">Ez a szöveg látható</p>
+        </section>
+
+        <hr>
+
+        <!-- Szegélyek és árnyékok -->
+        <section>
+            <h2>Szegélyek és árnyékok</h2>
+            <div class="rounded shadow">Lekerekített sarkok és árnyék</div>
+        </section>
+
+        <hr>
+
+        <!-- Betűtípusok -->
+        <section>
+            <h2>Betűtípusok</h2>
+            <p class="custom-font">Egyedi betűtípus: Arial</p>
+        </section>
+
+    </main>
+
+    <!-- Lábléc -->
+    <footer>
+        <p>&copy; 2024 CSS Cheatsheet</p>
+    </footer>
+
+</body>
+</html>

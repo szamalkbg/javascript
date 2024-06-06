@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Cheatsheet</title>
+    <style>
+        /* Flexbox beállítások */
+
+        /* Flex Container */
+        .flex-container {
+            display: flex; /* Flexbox engedélyezése */
+            flex-direction: row; /* Fő tengely iránya: sor */
+            justify-content: flex-start; /* Igazítás a fő tengely mentén: balra */
+            align-items: stretch; /* Igazítás a kereszttengely mentén: nyújtás */
+            gap: 10px; /* Elemek közötti térköz */
+        }
+
+        /* Flex Item */
+        .flex-item {
+            flex: 1; /* Rugalmas növekedés */
+            padding: 10px;
+            background-color: lightgrey;
+        }
+
+        .flex-item-2 {
+            flex: 2; /* Kétszeres rugalmas növekedés */
+            background-color: darkgrey;
+        }
+
+        /* Flex Direction */
+        .row {
+            flex-direction: row; /* Fő tengely: sor */
+        }
+
+        .row-reverse {
+            flex-direction: row-reverse; /* Fő tengely: fordított sor */
+        }
+
+        .column {
+            flex-direction: column; /* Fő tengely: oszlop */
+        }
+
+        .column-reverse {
+            flex-direction: column-reverse; /* Fő tengely: fordított oszlop */
+        }
+
+        /* Justify Content */
+        .justify-start {
+            justify-content: flex-start; /* Balra igazítás */
+        }
+
+        .justify-end {
+            justify-content: flex-end; /* Jobbra igazítás */
+        }
+
+        .justify-center {
+            justify-content: center; /* Középre igazítás */
+        }
+
+        .justify-between {
+            justify-content: space-between; /* Egyenletes elosztás a széleken */
+        }
+
+        .justify-around {
+            justify-content: space-around; /* Egyenletes elosztás körül */
+        }
+
+        .justify-evenly {
+            justify-content: space-evenly; /* Egyenletes elosztás */
+        }
+
+        /* Align Items */
+        .align-stretch {
+            align-items: stretch; /* Nyújtás */
+        }
+
+        .align-start {
+            align-items: flex-start; /* Igazítás a kereszttengely kezdetén */
+        }
+
+        .align-end {
+            align-items: flex-end; /* Igazítás a kereszttengely végén */
+        }
+
+        .align-center {
+            align-items: center; /* Középre igazítás */
+        }
+
+        .align-baseline {
+            align-items: baseline; /* Alapvonalhoz igazítás */
+        }
+
+        /* Align Self */
+        .align-self-start {
+            align-self: flex-start; /* Elem igazítása a kereszttengely kezdetén */
+        }
+
+        .align-self-end {
+            align-self: flex-end; /* Elem igazítása a kereszttengely végén */
+        }
+
+        .align-self-center {
+            align-self: center; /* Elem középre igazítása */
+        }
+
+        .align-self-baseline {
+            align-self: baseline; /* Elem alapvonalhoz igazítása */
+        }
+
+        .align-self-stretch {
+            align-self: stretch; /* Elem nyújtása */
+        }
+
+        /* Flex Wrap */
+        .flex-nowrap {
+            flex-wrap: nowrap; /* Nincs tördelés */
+        }
+
+        .flex-wrap {
+            flex-wrap: wrap; /* Tördelés */
+        }
+
+        .flex-wrap-reverse {
+            flex-wrap: wrap-reverse; /* Fordított tördelés */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Fejl
+
+
+
+
+
+    <!-- Fejléc -->
+    <header>
+        <h1>CSS Flexbox Cheatsheet</h1>
+    </header>
+
+    <!-- Fő tartalom -->
+    <main>
+
+        <!-- Flex Container -->
+        <section>
+            <h2>Flex Container</h2>
+            <div class="flex-container">
+                <div class="flex-item">Elem 1</div>
+                <div class="flex-item">Elem 2</div>
+                <div class="flex-item-2">Elem 3 (2x szélesebb)</div>
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- Flex Direction -->
+        <section>
+            <h2>Flex Direction</h2>
+            <div class="flex-container row">
+                <div class="flex-item">Row</div>
+                <div class="flex-item">Row</div>
+                <div class="flex-item">Row</div>
+            </div>
+            <div class="flex-container row-reverse">
+                <div class="flex-item">Row-Reverse</div>
+                <div class="flex-item">Row-Reverse</div>
+                <div class="flex-item">Row-Reverse</div>
+            </div>
+            <div class="flex-container column">
+                <div class="flex-item">Column</div>
+                <div class="flex-item">Column</div>
+                <div class="flex-item">Column</div>
+            </div>
+            <div class="flex-container column-reverse">
+                <div class="flex-item">Column-Reverse</div>
+                <div class="flex-item">Column-Reverse</div>
+                <div class="flex-item">Column-Reverse</div>
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- Justify Content -->
+        <section>
+            <h2>Justify Content</h2>
+            <div class="flex-container justify-start">
+                <div class="flex-item">Start</div>
+                <div class="flex-item">Start</div>
+                <div class="flex-item">Start</div>
+            </div>
+            <div class="flex-container justify-end">
+                <div class="flex-item">End</div>
+                <div class="flex-item">End</div>
+                <div class="flex-item">End</div>
+            </div>
+            <div class="flex-container justify-center">
+                <div class="flex-item">Center</div>
+                <div class="flex-item">Center</div>
+                <div class="flex-item">Center</div>
+            </div>
+            <div class="flex-container justify-between">
+                <div class="flex-item">Between</div>
+                <div class="flex-item">Between</div>
+                <div class="flex-item">Between</div>
+            </div>
+            <div class="flex-container justify-around">
+                <div class="flex-item">Around</div>
+                <div class="flex-item">Around</div>
+                <div class="flex-item">Around</div>
+            </div>
+            <div class="flex-container justify-evenly">
+                <div class="flex-item">Evenly</div>
+                <div class="flex-item">Evenly</div>
+                <div class="flex-item">Evenly</div>
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- Align Items -->
+        <section>
+            <h2>Align Items</h2>
+            <div class="flex-container align-stretch">
+                <div class="flex-item">Stretch</div>
+                <div class="flex-item">Stretch</div>
+                <div class="flex-item">Stretch</div>
+            </div>
+            <div class="flex-container align-start">
+                <div class="flex-item">Start</div>
+                <div class="flex-item">Start</div>
+                <div class="flex-item">Start</div>
+            </div>
+            <div class="flex-container align-end">
+                <div class="flex-item">End</div>
+                <div class="flex-item">End</div>
+                <div class="flex-item">End</div>
+            </div>
+            <div class="flex-container align-center">
+                <div class="flex-item">Center</div>
+                <div class="flex-item">Center</div>
+                <div class="flex-item">Center</div>
+            </div>
+            <div class="flex-container align-baseline">
+                <div class="flex-item">Baseline</div>
+                <div class="flex-item">Baseline</div>
+                <div class="flex-item">Baseline</div>
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- Align Self -->
+        <section>
+            <h2>Align Self</h2>
+            <div class="flex-container">
+                <div class="flex-item align-self-start">Start</div>
+                <div class="flex-item align-self-end">End</div>
+                <div class="flex-item align-self-cent
+
+

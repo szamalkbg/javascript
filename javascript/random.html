@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kevert Cheatsheet</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        /* CSS Példák */
+        .highlight {
+            background-color: yellow;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Fejléc -->
+    <header class="bg-primary text-white text-center p-3">
+        <h1>Kevert Cheatsheet</h1>
+    </header>
+
+    <!-- Fő tartalom -->
+    <main class="container mt-4">
+        
+        <!-- HTML -->
+        <section>
+            <h2>HTML</h2>
+            <p><strong>Bekezdés:</strong></p>
+            <pre>
+&lt;p&gt;Ez egy bekezdés.&lt;/p&gt;
+            </pre>
+            <p><strong>Link:</strong></p>
+            <pre>
+&lt;a href="https://www.example.com"&gt;Ez egy link&lt;/a&gt;
+            </pre>
+            <p><strong>Kép:</strong></p>
+            <pre>
+&lt;img src="image.jpg" alt="Leírás"&gt;
+            </pre>
+        </section>
+
+        <hr>
+
+        <!-- CSS -->
+        <section>
+            <h2>CSS</h2>
+            <p><strong>Szöveg színezése:</strong></p>
+            <pre>
+.text-red {
+    color: red;
+}
+            </pre>
+            <p><strong>Háttér színezése:</strong></p>
+            <pre>
+.bg-blue {
+    background-color: blue;
+}
+            </pre>
+            <p><strong>Szöveg igazítása:</strong></p>
+            <pre>
+.text-center {
+    text-align: center;
+}
+            </pre>
+        </section>
+
+        <hr>
+
+        <!-- JavaScript -->
+        <section>
+            <h2>JavaScript</h2>
+            <p><strong>Változók:</strong></p>
+            <pre>
+let name = "John";
+const pi = 3.14;
+            </pre>
+            <p><strong>Függvény:</strong></p>
+            <pre>
+function greet() {
+    console.log("Hello, World!");
+}
+            </pre>
+            <p><strong>Event Listener:</strong></p>
+            <pre>
+document.getElementById("myButton").addEventListener("click", function() {
+    alert("Button clicked!");
+});
+            </pre>
+        </section>
+
+        <hr>
+
+        <!-- jQuery -->
+        <section>
+            <h2>jQuery</h2>
+            <p><strong>Document Ready:</strong></p>
+            <pre>
+$(document).ready(function() {
+    console.log("Document ready!");
+});
+            </pre>
+            <p><strong>Element kiválasztása és módosítása:</strong></p>
+            <pre>
+$("#myElement").text("Hello, World!").css("color", "red");
+            </pre>
+            <p><strong>Eseménykezelés:</strong></p>
+            <pre>
+$("#myButton").click(function() {
+    alert("Button clicked!");
+});
+            </pre>
+        </section>
+
+    </main>
+
+    <!-- Lábléc -->
+    <footer class="bg-light text-center p-3 mt-4">
+        <p>&copy; 2024 Kevert Cheatsheet</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
